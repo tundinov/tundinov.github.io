@@ -1,0 +1,101 @@
+.wrapper {
+    background: #fff url(../img/bg.png) no-repeat center; 
+    display: grid;
+    grid-column-gap: 63px;
+    width: 99%;
+    margin: 0 auto;
+    align-items: center;
+    grid-template: 
+        ".    br    ." auto
+        "ls    cn    rs" 1fr
+        ".    gb    ." 157px
+        /1fr  minmax(auto, 770px)  1fr
+    ;
+}
+
+.brands, .content, .game-button {
+    justify-self: center;
+}
+.brands {
+    grid-area: br;
+}
+.left-sidebar {
+    grid-area: ls;
+    justify-self: end;
+    font-size: 11px;
+    height: 371px;
+    overflow-y: scroll;
+}
+.content {
+    grid-area: cn;
+}
+.right-sidebar {
+    grid-area: rs;
+    justify-self: start;
+    font-weight: 400;
+    font-size: 17px;
+    width: 100%;
+    line-height: 20px;
+    position: relative;
+    align-self: start;
+}
+.game-button {
+    grid-area: gb;
+}
+    
+.left-sidebar::-webkit-scrollbar, .right-sidebar__wrap::-webkit-scrollbar, .row1__scroll::-webkit-scrollbar, .row2__scroll::-webkit-scrollbar  {
+    width: 13px;
+    height: 100%;
+}
+
+.left-sidebar::-webkit-scrollbar-track, .right-sidebar__wrap::-webkit-scrollbar-track, .row1__scroll::-webkit-scrollbar-track, .row2__scroll::-webkit-scrollbar-track  {
+    background: url(../img/1.png) repeat-y center;
+}
+
+.left-sidebar::-webkit-scrollbar-thumb, .right-sidebar__wrap::-webkit-scrollbar-thumb, .row1__scroll::-webkit-scrollbar-thumb, .row2__scroll::-webkit-scrollbar-thumb   {
+    background: url(../img/Ellipse.png) no-repeat;
+}
+
+/* logo ---------------------------------------------------------------*/
+
+.brands {
+    margin: 57px 0 30px;
+    display: grid;
+    grid-column-gap: 47px;
+    align-items: center;
+    justify-items: center;
+    grid-template: 
+        ".    b1    ." auto
+        "b2    cl    b3" 1fr
+        ".    tm    ." auto
+        /1fr  1fr  1fr
+    ;
+}
+
+.brands__1 {
+    grid-area: b1;
+    background: url(../img/the_miraga.png) no-repeat center;
+    align-self: end;
+    width: 98.29px;
+    height: 98.42px;
+}
+.brands__2 {
+    grid-area: b2;
+    background: url(../img/brands2.png) no-repeat center;
+    width: 98.29px;
+    height: 98.42px;
+}
+.brands__3 {
+    grid-area: b3;
+    background: url(../img/brands3.png) no-repeat center;
+    width: 98.29px;
+    height: 98.42px;
+}
+.brands__clock {
+    grid-area: cl;
+    text-align: center;
+    margin: 12px 0;
+}
+.brands__time {
+    grid-area: tm;
+}
