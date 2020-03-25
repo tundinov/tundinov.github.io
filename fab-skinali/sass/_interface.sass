@@ -1,0 +1,116 @@
+body
+    +light
+    color: $text-color
+img
+    max-width: 100%
+.section
+    padding: 80px 0
+    &-title
+        font-size: 30px
+        text-align: center
+        +bold
+        text-transform: uppercase
+    &__title
+        margin-bottom: 100px
+.button-o
+    border: 2px solid $primary
+    color: #507fe1
+    padding: 17px 22px
+    font-size: 12px
+    background-color: #fff
+    text-transform: uppercase
+    +bold
+    text-decoration: none
+.button
+    text-decoration: none
+    padding: 25px 45px
+    text-transform: uppercase
+    border: none
+    background-color: $primary
+    color: #fff
+    +bold
+    cursor: pointer
+    &-fitting
+        color: $primary
+        background-color: #fff
+    &-add
+        background-color: lighten($primary, 10%)
+        color: #fff
+    &-like
+        background-color: $primary
+        height: 32px
+        border: none
+        width: 30px
+
+.bg-secondary
+    background: $bg-secondary
+.input
+    height: 80px
+    border: 1px solid #dddddd
+
+.select
+    height: 80px
+    width: 100%
+    border: 1px solid #ddd
+    position: relative
+    &:after
+        content: ''
+        position: absolute
+        z-index: 9
+        top: 50%
+        right: 20px
+        transform: translateY(-50%)
+        width: 20px
+        height: 20px
+        background: url('../img/darrow.png') no-repeat center
+        background-size: 100%
+        opacity: 0.3
+    &:hover
+        cursor: pointer
+    &_checked
+        line-height: 80px
+        padding-left: 30px
+    &__dropdown
+        position: absolute
+        top: 80px
+        width: 100%
+        padding-left: 10px
+        background-color: #fff
+        border: 1px solid #ddd
+        margin: 0px
+        list-style: none
+        display: none
+        &_open
+            display: block
+    &__option
+        padding: 20px
+        &:hover
+            background-color: $bg-secondary
+    
+.checkbox
+    display: none
+    &:checked +label:before
+        background: url(../img/tick.svg)
+    &-label
+        display: flex
+        align-items: center
+        margin-right: 42px
+        &:hover
+            cursor: pointer
+        &::before
+            content: ''
+            height: 30px
+            width: 30px
+            border: 1px solid #dddddd
+            margin-right: 20px
+
+
+@media screen and (max-width: 576px)
+    .button
+        font-size: 10px
+        &-o
+            font-size: 10px
+    .section
+        padding: 60px 0
+        &-title
+            font-size: 24px
