@@ -1,0 +1,238 @@
+body 
+    font-family: 'Roboto'
+    font-weight: 300
+    font-style: normal
+    color: #000
+    text-align: center
+h1 
+    font-weight: 100
+    font-size: 67px
+    line-height: 50px
+h2 
+    font-weight: 300
+    font-size: 30px
+    line-height: 35px
+.container
+    max-width: 768px
+    margin: 0 auto
+.main
+    padding-top: 80px
+.header
+    height: 80px
+    display: flex
+    align-items: center
+    position: fixed
+    background: #fff
+    width: 100%
+    z-index: 2
+.menu
+    display: flex
+    margin: auto
+    &__item
+        margin: 0 38px
+    &__link
+        color: #435993
+        font-size: 14px
+        &:hover
+            color: #1C1C1C
+.active .menu__link
+    color: #1C1C1C
+.title
+    margin-top: auto
+    margin: auto auto 0
+.icon
+    margin-bottom: 17px
+.info
+    &__form
+        margin-top: 50px
+    &__top
+        background: url(../img/bg.svg) center no-repeat
+        height: 180px
+        display: flex
+    &__input
+        height: 60px
+        max-width: 520px
+        width: 100%
+        border: 1px solid #E5E5E5
+        border-radius: 5px
+        text-align: center
+        font-weight: normal
+        font-size: 20px
+        line-height: 28px
+        &_wrap
+            position: relative
+            max-width: 520px
+            margin: auto auto 25px
+            &_label
+                position: absolute
+                top: 30%
+                left: 0
+                right: 0
+                transition: 0.2s
+                font-size: 14px
+                color: #adadad
+                visibility: hidden
+                opacity: 0
+            &_label_v
+                top: 7%
+                visibility: visible
+                opacity: 1
+        &::-webkit-input-placeholder
+            color: #C8C8C8
+            font-size: 24px
+        &:-moz-placeholder
+            color: #C8C8C8
+            font-size: 24px
+        &::-moz-placeholder
+            color: #C8C8C8
+            font-size: 24px
+        &:-ms-input-placeholder
+            color: #C8C8C8
+            font-size: 24px
+        &:focus
+            border: 1px solid #435993
+            color: #000
+            font-size: 20px
+            & + label
+                top: 7%
+                visibility: visible
+                opacity: 1
+            &::-webkit-input-placeholder
+                color: transparent
+                font-size: 14px
+            &:-moz-placeholder
+                color: transparent
+                font-size: 14px
+            &::-moz-placeholder
+                color: transparent
+                font-size: 14px
+            &:-ms-input-placeholder
+                color: transparent
+                font-size: 14px
+    &__middle
+        padding-top: 85px
+.input-focused
+    font-size: 20px
+.select 
+    height: 60px
+    max-width: 320px
+    width: 100%
+    position: relative
+    margin: 0 auto 25px
+    &:hover 
+        cursor: pointer
+    &_checked 
+        line-height: 60px
+        color: #C8C8C8
+        font-size: 24px
+        &:after
+            content: ''
+            position: absolute
+            top: 35%
+            right: 17px
+            width: 16px
+            height: 20px
+            background: url("../img/arrow.svg") no-repeat center
+            background-size: 100%
+    &_checked_v.select_checked:after
+        transform: scale(1, -1)
+    &__dropdown 
+        position: absolute
+        top: 60px
+        height: 300px
+        width: 100%
+        background-color: #fff
+        margin: 0px
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2)
+        border-radius: 5px
+        list-style: none
+        display: none
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            width: 90%
+            height: 29px
+            background: #fff
+        &::after
+            content: ''
+            position: absolute
+            bottom: 0
+            width: 90%
+            height: 29px
+            background: #fff
+    &__dropdown_open 
+        display: block
+        z-index: 1
+    &__option 
+        padding: 6px
+        color: #435993
+        font-weight: 300
+    &__option
+        &:hover 
+            background-color: #f5f6f8
+.bg 
+    display: none
+.bg_v 
+    display: block
+    position: fixed
+    width: 100vw
+    height: 100vh
+.dropdown-wrap
+    overflow-y: scroll
+    height: inherit
+    width: 313px
+    &::-webkit-scrollbar
+        width: 4px
+    &::-webkit-scrollbar-thumb  
+        background: #D9D9D9
+        border-radius: 4px
+.experience
+    padding: 54px 0 0
+    &__form
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        padding: 50px 0 0 38px
+    &__item
+        flex-basis: 30%
+        &:nth-of-type(2)
+            padding-left: 24px
+        &:nth-of-type(3)
+            padding-left: 49px
+    &__checkbox
+        text-align: left
+.checkbox
+    display: none
+    &-label
+        display: flex
+        align-items: center
+        margin-bottom: 15px
+        &:hover 
+            cursor: pointer
+            &::before
+                background: #E9EFFF
+        &:before
+            content: ''
+            height: 18px
+            width: 18px
+            border: 1px solid #435993
+            border-radius: 3px
+            margin-right: 12px
+    &:checked + label
+        &:before 
+            background: #435993 url(../img/checked.svg) no-repeat
+            background-position: 50% 50%
+.skill
+    padding: 65px 0 300px
+#r1
+    width: 300px
+#test 
+    height: 20px
+    width: 300px
+    background: green
+
+
+            
+
+  
